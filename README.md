@@ -32,13 +32,13 @@ Next, some variables are set:
 - `MINER_URL` is set to the URL of the XMRig miner software release.
 - `MINER_DIR` is set to the directory where the miner will be downloaded and extracted.
 - `MINER_EXE` is set to the name of the executable file for the miner.
-- `STRATUM_URL` is set to the URL of the mining pool.
+- `MINING_URL` is set to the URL of the mining pool.
 
-After the variables are set, the script checks if the miner software is already downloaded and extracted. If it isn't, the script creates the `MINER_DIR` directory, downloads the miner software from the `MINER_URL`, and extracts it to the `MINER_DIR` directory.
+After the variables are set, the script checks if the miner software is already downloaded and extracted. If it isn't, the script creates the `SolRig` directory in your `/home`, downloads the miner software and extracts it to the `SolRig` folder.
 
-Finally, the script starts mining by running the `MINER_EXE` executable with the provided arguments. It uses the `ADDRESS` as the username, appends the hostname and a unique worker ID to it, and uses `x` as the password. The `-t` flag is used to specify the number of threads to use for mining.
+Finally, the script starts mining by running the miner with the provided arguments. It uses the `ADDRESS` as the username, appends the hostname and a unique worker ID to it, and uses `x` as the password. The `-t` flag is used to specify the number of threads to use for mining.
 
-If the miner software is not found in the `MINER_DIR` directory, the script will display an error message.
+If the miner software is not found in the `SolRig` directory, the script will display an error message.
 
 
 ## Disclaimer
