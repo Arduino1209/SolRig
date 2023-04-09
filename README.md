@@ -4,7 +4,7 @@ This is a Bash script that downloads and runs the XMRig miner software adapted f
 
 ## Prerequisites
 
-- Bash shell
+- Bash shell (Linux Ubuntu)
 - Internet connection
 - Solana wallet address
 - Number of threads for mining
