@@ -1,4 +1,3 @@
-  GNU nano 4.8                                                   start_mining.sh                                                              
 #!/bin/bash
 
 # Check for the required arguments
