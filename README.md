@@ -32,7 +32,7 @@ Next, some variables are set:
 - `MINER_URL` is set to the URL of the XMRig miner software release.
 - `MINER_DIR` is set to the directory where the miner will be downloaded and extracted.
 - `MINER_EXE` is set to the name of the executable file for the miner.
-- `MINING_URL` is set to the URL of the mining pool.
+- `POOL_URL` is set to the URL of the mining pool.
 
 After the variables are set, the script checks if the miner software is already downloaded and extracted. If it isn't, the script creates the `SolRig` directory in your `/home`, downloads the miner software and extracts it to the `SolRig` folder.
 
