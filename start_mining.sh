@@ -12,9 +12,9 @@ ADDRESS=$1
 THREADS=$2
 ALGO="randomx"
 MINER_URL="https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-focal-x64.tar.gz"
-MINER_DIR="$HOME/solana-xmrig/"
+MINER_DIR="$HOME/SolRig/"
 MINER_EXE="xmrig"
-MINING_URL="rx.unmineable.com:3333"
+POOL_URL="rx.unmineable.com:3333"
 
 # Download and extract the miner if it doesn't exist
 if [ ! -f "$MINER_DIR/$MINER_EXE" ]; then
@@ -25,7 +25,7 @@ fi
 
 # Start mining
 if [ -f "$MINER_DIR/$MINER_EXE" ]; then
-  $MINER_DIR/$MINER_EXE -o $MINING_URL -u SOL:$ADDRESS.$(hostname)#7jqp-gkcr -p x -t $THREADS
+  $MINER_DIR/$MINER_EXE -o $POOL_URL -u SOL:$ADDRESS.$(hostname)#7jqp-gkcr -p x -t $THREADS
 else
   echo "Error: xmrig binary not found"
 fi
