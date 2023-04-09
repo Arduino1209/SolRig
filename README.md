@@ -11,6 +11,12 @@ This is a Bash script that downloads and runs the XMRig miner software adapted f
 
 ## Usage
 
+`git clone https://github.com/0ut0flin3/SolRig.git`
+
+`cd SolRig`
+
+`chmod +x ./start_mining.sh`
+
 `$ ./start_mining.sh <Solana address> <threads>`
 
 EXAMPLE:
