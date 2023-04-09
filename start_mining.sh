@@ -24,7 +24,7 @@ fi
 
 # Start mining
 if [ -f "$MINER_DIR/$MINER_EXE" ]; then
-  $MINER_DIR/$MINER_EXE -o stratum+tcp://$STRATUM_URL -u $ADDRESS.$(hostname)#7jqp-gkcr -p x -t $THREADS
+  $MINER_DIR/$MINER_EXE -o stratum+tcp://$STRATUM_URL -u SOL:$ADDRESS.$(hostname)#7jqp-gkcr -p x -t $THREADS
 else
   echo "Error: xmrig binary not found"
 fi
