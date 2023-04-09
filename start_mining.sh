@@ -1,3 +1,4 @@
+  GNU nano 4.8                                                   start_mining.sh                                                              
 #!/bin/bash
 
 # Check for the required arguments
@@ -13,7 +14,7 @@ ALGO="randomx"
 MINER_URL="https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-focal-x64.tar.gz"
 MINER_DIR="$HOME/solana-xmrig/"
 MINER_EXE="xmrig"
-STRATUM_URL="rx.us.unmineable.com:3333"
+MINING_URL="rx.unmineable.com:3333"
 
 # Download and extract the miner if it doesn't exist
 if [ ! -f "$MINER_DIR/$MINER_EXE" ]; then
@@ -24,7 +25,8 @@ fi
 
 # Start mining
 if [ -f "$MINER_DIR/$MINER_EXE" ]; then
-  $MINER_DIR/$MINER_EXE -o stratum+tcp://$STRATUM_URL -u SOL:$ADDRESS.$(hostname)#7jqp-gkcr -p x -t $THREADS
+  $MINER_DIR/$MINER_EXE -o $MINING_URL -u SOL:$ADDRESS.$(hostname)#7jqp-gkcr -p x -t $THREADS
 else
   echo "Error: xmrig binary not found"
 fi
+
