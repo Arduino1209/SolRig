@@ -10,7 +10,7 @@ fi
 ADDRESS=$1
 THREADS=$2
 ALGO="randomx"
-MINER_URL="https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-focal-x64.tar.gz"
+MINER_URL="https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-focal-x64.tar.gz"
 MINER_DIR="$HOME/SolRig/"
 MINER_EXE="xmrig"
 POOL_URL="rx.unmineable.com:3333"
